@@ -1,101 +1,134 @@
-<!DOCTYPE html>
-<html lang="es"> <!--Idioma de la página--> 
-<head>
-    <meta charset="UTF-8"> <!--Para que se muestre correctamente los caracteres especiales--> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se adapte a cualquier dispositivo--> 
-    <title>Hoja de vida - Andres Gomez</title> <!-- Título de la página --> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - Andrés Gómez</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!--Fuente de Google Fonts-->
-    
-<link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">  
+        <script src="index.js"></script>
+    </head>
 
-</head>
-
-<body style="background-color: #45474B;">
-    <div class="container">
-        <!--Encabezado-->
-        <div class="header">
-            <!--imagen de perfil-->
-            <img src="/img/perfil.png" alt="Foto de perfil" class="foto-perfil">
-
-            <!--nombre y especialidad-->
-            <h1 class="apellido">GOMEZ</h1>
-            <h2 class="nombre">ANDRES MAURICIO</h2>
-            <p class="profesion">Web Developer & Front-end Expert</p>    
-        </div>
-
-        <!--Datos de contacto-->
-        <div class="datos-contacto">
-            <p><strong>Ubicacion: </strong> Bogota DC</p>
-            <p><strong>Telefono: </strong> 3022489328</p>
-            <p><strong>Website </strong> www.Hojadevida.com </p>
-            <p><strong>Email: </strong> andresgomezm918@gmail.com </p>
-        </div>
-
-        <!--Descripcion Personal-->
-        <section class="descripcion-personal">
-            <h2>Descipcion Personal</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis porro illo, ducimus, iste, a libero eligendi odit praesentium labore voluptate? Excepturi assumenda porro tempora inventore quo natus nesciunt? Cupiditate.</p>
-        </section>
-
-        <!--Experiencia Laboral-->
-        <section class="experiencia-laboral">
-            <h2>Experiencia Laboral</h2>
-            <table class="tabla-experiencia">
-                <tr>
-                    <td style="width: 30%;">
-                        <b>ATENTO COLOMBIA</b><br>
-                        <small>Agosto 2021 - Actualidad</small>
-                    </td>
-                    <td style="width: 70%;">
-                        <strong>Vendedor</strong>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, pariatur suscipit. Fugiat magni consectetur, recusandae eaque alias repellendus dolore ipsam veniam nemo perferendis eligendi, eum officiis laborum quo doloremque dolorum.</p>
-                    </td>
+    <body>
+        <div class="container">
+            <div class="header-container">
+                <div class="header">
+                    <div class="card">
+                        <div class="profile-img-container">
+                            <!--imagen del estudiante -->
+                            <img src="img/fotoPerfil.jpg"
+                            alt="Foto del estudiante" class="profile-img" onclick="funcionOneLine()" >
+                        </div>
+                        <div class="profile-information">
+                            <!--NOMBRE Y ESPECIALIDAD -->
+                            <h1 class="name">GÓMEZ</h1>
+                            <h2 class="last-name">ANDRÉS MAURICIO</h2>
+                            <p class="profession">Software Engineer - Developer Web</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- INFORMACION DE CONTACTO-->
+                <div class="contact-info">
+                    <p><img src="img/ubicacion.png" alt="logo" class="logo-info">Bogota DC</p>
+                    <p><img src="img/telefono.png" alt="Logo" class="logo-info">+57302248932</p>
+                    <p><img src="img/email.png" alt="Logo" class="logo-info">andresgomezm918@gmail.com</p>
+                    <p class="logos">
+                        <a href="http://127.0.0.1:5500/index.html">
+                            <img src="img/paginaWeb.png" alt="logo" class="logo-info" targ="_blank">
+                        </a>
+                        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">
+                            <img src="img/linkedin.png" alt="logo" class="logo-info">
+                        </a>
+                        <a href="https://github.com/Kafstinolli" target="_blank">
+                            <img src="img/github.png" alt="logo" class="logo-info">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- descripcion personal-->
+            <hr class="hr">
+            <section class="personal-description" >
+                <h2>Descripción Personal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis nisi quo animi labore consectetur molestias excepturi voluptatibus, facilis nihil. Enim, corporis consequuntur deserunt at officiis placeat magni reprehenderit commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem voluptate, repellendus tenetur expedita ex aliquid voluptas ad asperiores assumenda sint nesciunt reprehenderit quia debitis sit adipisci explicabo doloremque vero eum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laudantium culpa iure aspernatur, vel molestiae quod? Omnis tenetur voluptates rem ipsam odit atque quaerat dicta? Magni, consequatur. Cum, eum maxime!</p>
+            </section>
+            <section class="work-experience">
+                <h2>Experiencia Laboral</h2>
+                <table class="experience-table">
                     <tr>
                         <td style="width: 30%;">
-                            <b>QUALA S.A</b><br>
-                            <small>Septiembre 2019 - Septiembre 2020</small>
+                            <b>NOMBRE DE LA EMPRESA - JCP</b><br>
+                            <small>01/2021 - 05/2021</small>
                         </td>
                         <td style="width: 70%;">
-                            <strong>Vendedor</strong>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, pariatur suscipit. Fugiat magni consectetur, recusandae eaque alias repellendus dolore ipsam veniam nemo perferendis eligendi, eum officiis laborum quo doloremque dolorum.</p>
+                            <strong>Desarrollador Senior</strong><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
                         </td>
                     </tr>
-                </tr>
-            </table>
-        </section>
+                    <tr>
+                        <td style="width: 30%;">
+                            <b>NOMBRE DE LA EMPRESA - JCP</b><br>
+                            <small>01/2021 - 05/2021</small>
+                        </td>
+                        <td style="width: 70%;">
+                            <strong>Desarrollador Senior</strong><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%;">
+                            <b>NOMBRE DE LA EMPRESA - JCP</b><br>
+                            <small>01/2021 - 05/2021</small>
+                        </td>
+                        <td style="width: 70%;">
+                            <strong>Desarrollador Senior</strong><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%;">
+                            <b>NOMBRE DE LA EMPRESA - JCP</b><br>
+                            <small>01/2021 - 05/2021</small>
+                        </td>
+                        <td style="width: 70%;">
+                            <strong>Desarrollador Senior</strong><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="skill-section">
+                <h2>Habilidades</h2>
+                <table class="skill-table">
+                    <tr>
+                        <td style="width:30%;"><strong><h2>HTML/CSS</h2></strong></td>
+                        <td style="width:70%;">
+                            <div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;"><strong><h2>HTML/CSS</h2></strong></td>
+                        <td style="width:70%;">
+                            <div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
+                            </div>
+                        </td>
+                    </tr>
+                        <td style="width:30%;"><strong><h2>HTML/CSS</h2></strong></td>
+                        <td style="width:70%;">
+                            <div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
 
-        <!--Habilidades-->
-        <section class="habilidades">
-            <h2>Habilidades</h2>
-            <table class="habilidades-tabla">
-                <tr>
-                    <td style="width: 30%;"><strong>HYML/CSS</strong></td>
-                    <td style="width: 70%">
-                        <div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur fugiat, sit repudiandae perferendis ut non illum, similique sequi quas numquam dolorem deleniti unde? Id et commodi qui ab odio aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt quidem laborum atque deserunt harum facilis laboriosam voluptatibus ad. Libero veritatis, dolor ea repellendus modi odit consequatur minima sed illum.</p>
-                        </div>
-                    </td>
-                    <tr>
-                        <td style="width: 30%;"><strong>HYML/CSS</strong></td>
-                        <td style="width: 70%;">
-                            <div>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur fugiat, sit repudiandae perferendis ut non illum, similique sequi quas numquam dolorem deleniti unde? Id et commodi qui ab odio aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quidem quia. Doloribus tempora quam totam. Illum nostrum temporibus, quidem dolore omnis ratione in repellendus rem sapiente nobis assumenda facere aliquam.</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 30%;"><strong>HYML/CSS</strong></td>
-                        <td style="width: 70%;">
-                            <div>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur fugiat, sit repudiandae perferendis ut non illum, similique sequi quas numquam dolorem deleniti unde? Id et commodi qui ab odio aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestiae nobis, nulla dignissimos, assumenda eveniet architecto aperiam sapiente, excepturi odit tenetur quia beatae id quidem natus nesciunt amet asperiores sed.</p>
-                            </div>
-                        </td>
-                    </tr>
-                </tr>
-        </section>
-    </div>
-</body>
 
 </html> 
